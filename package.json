@@ -1,0 +1,27 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "class":"nodemon --exec babel-node ./oop/class.js",
+    "prototype":"nodemon --exec babel-node ./oop/prototype.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blackraven93/OOP-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blackraven93/OOP-test/issues"
+  },
+  "homepage": "https://github.com/Blackraven93/OOP-test#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "nodemon": "^2.0.14"
+  }
+}
