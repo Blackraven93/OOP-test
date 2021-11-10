@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "class":"nodemon --exec babel-node ./oop/class.js",
-    "prototype":"nodemon --exec babel-node ./oop/prototype.js"
+    "class": "nodemon --exec babel-node ./oop/class.js",
+    "prototype": "nodemon --exec babel-node ./oop/prototype.js",
+    "calculate": "nodemon --exec babel-node ./project/calculate/calculate.js"
   },
   "repository": {
     "type": "git",
