@@ -9,7 +9,8 @@
 ### object
 ### prototype
 ### class
-
-
+- class는 상속받는 것
+### interface
+- interface는 장착하는 것
 
 
