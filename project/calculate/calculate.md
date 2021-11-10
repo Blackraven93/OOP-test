@@ -4,7 +4,7 @@
 ## Class 분류
 ### Number(숫자)
   - keypad number btn
-    - 구체화
+    - detail(구체화)
       1. [x] 버튼을 눌렀을 때 button value를 input 창에 표시
       2. [x] 0일 때는 추가 X
       3. [ ] 연산이 종료 되는 시점 숫자 크기 체크 후 쉼표 표시
