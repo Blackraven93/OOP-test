@@ -87,8 +87,10 @@ const init = (btn, input) => {
                 } else {
                     // 오퍼레이터도 있고 previous 넘버도 있고
                     // current에 붙이면 된다~
+                    log("여기에 걸림??")
                     input.innerText += btn.innerText
                     currentNumber = input.innerText
+
                 }
             }
         }
@@ -97,14 +99,61 @@ const init = (btn, input) => {
         if (previousNumber === '') {
             // 첫단계
             if (btn.innerText === '=') {
-                console.log("error 처리하기")
+                alert("숫자 입력 에러처리하기")
             } else {
                 operator = btn.innerText
             }
         } else {
-            console.log("prev값은 current + prev")
-            if (operator === "=") {
-                '= 로직 처리하기'
+            // previous가 있는 상태
+            // 계산하기
+
+
+            previousNumber = parseInt(previousNumber)
+            currentNumber = parseInt(currentNumber)
+            switch (btn.innerText) {
+                case '+':
+                    previousNumber = previousNumber + currentNumber
+                    break
+                case '-':
+                    previousNumber = previousNumber - currentNumber
+                    break
+                case 'x':
+                    previousNumber = previousNumber * currentNumber
+                    break
+                case '/':
+                    previousNumber = Math.floor(previousNumber / currentNumber)
+                    break
+                case "=":
+                    switch (operator) {
+                        case '+':
+                            previousNumber = previousNumber + currentNumber
+                            input.innerText = previousNumber
+                            currentNumber = ""
+                            previousNumber = ""
+                            operator = ""
+                            break
+                        case '-':
+                            previousNumber = previousNumber - currentNumber
+                            input.innerText = previousNumber
+                            currentNumber = ""
+                            previousNumber = ""
+                            operator = ""
+                            break
+                        case 'x':
+                            previousNumber = previousNumber * currentNumber
+                            input.innerText = previousNumber
+                            currentNumber = ""
+                            previousNumber = ""
+                            operator = ""
+                            break
+                        case '/':
+                            previousNumber = Math.floor(previousNumber / currentNumber)
+                            input.innerText = previousNumber
+                            currentNumber = ""
+                            previousNumber = ""
+                            operator = ""
+                            break
+                    }
             }
         }
     }
