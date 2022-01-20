@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "class": "nodemon --exec babel-node ./oop/class.js",
+    "dive": "nodemon --exec babel-node ./oop/deepDive.js",
     "prototype": "nodemon --exec babel-node ./oop/prototype.js",
     "calculate": "nodemon --exec babel-node ./project/calculate/calculate.js"
   },
